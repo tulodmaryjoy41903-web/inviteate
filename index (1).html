@@ -1,0 +1,2495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ever After | Wedding Website Builder</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&family=Great+Vibes&family=Jost:wght@400;500;600&family=Lato:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;500;600&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Prata&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            Ever After <span>♡</span>
+        </div>
+
+<nav>
+    <a href="#home" onclick="showHome(); return false;">Home</a>
+    <a href="#templates" onclick="showTemplates(); return false;">Templates</a>
+    <a href="#about" onclick="showAbout(); return false;">About</a>
+</nav>
+
+
+<button class="login-btn" onclick="showLogin()">
+    Log In
+</button>
+
+<div class="account-menu" id="accountMenu" style="display:none;">
+
+    <button type="button" id="accountMenuButton"
+            onclick="toggleAccountMenu()">
+        <span id="accountMenuName">My Account</span>
+        <span>⌄</span>
+    </button>
+
+    <div class="account-dropdown" id="accountDropdown"
+         style="display:none;">
+
+        <p id="accountDropdownName">Couple Account</p>
+
+        <button type="button" onclick="showCoupleDashboard()">
+            ♡ My Dashboard
+        </button>
+
+        <button type="button" onclick="logoutCouple()">
+            ↪ Log Out
+        </button>
+
+    </div>
+</div>
+
+        
+
+
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <p class="eyebrow">
+                YOUR LOVE STORY, BEAUTIFULLY INVITED
+            </p>
+
+            <h1>
+                Create a Wedding Invitation
+                <br>
+                <span>As Unique As Your Love</span>
+            </h1>
+
+            <p class="hero-text">
+                Beautiful, personalized wedding websites
+                made special for your once-in-a-lifetime day.
+            </p>
+
+            <a href="#templates" class="main-btn">
+                Explore Templates ♡
+            </a>
+
+        </section>
+
+
+        <!-- TEMPLATES SECTION -->
+        <section class="templates" id="templates">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">FIND YOUR PERFECT STYLE</p>
+
+                <h2>Choose Your Invitation</h2>
+
+                <p>
+                    Start with a design you love. Make it yours.
+                </p>
+
+            </div>
+
+
+            <div class="template-grid">
+
+
+<!-- TEMPLATE 1: FLORAL ROMANCE -->
+<article class="template-card">
+
+    <div class="template-gallery floral-gallery">
+
+        <div class="template-gallery-header">
+            <span>FLORAL ROMANCE</span>
+            <span class="gallery-counter">1 / 4</span>
+        </div>
+
+        <div class="template-carousel">
+
+            <div class="template-slide floral-slide-cover">
+                <div class="floral-preview-decoration">✿</div>
+                <small>TOGETHER WITH OUR FAMILIES</small>
+                <h2>Alex <span>&</span> Maria</h2>
+                <p>ARE GETTING MARRIED</p>
+                <div class="floral-preview-line"></div>
+                <p>JUNE 20, 2027</p>
+                <div class="floral-preview-decoration bottom">❀</div>
+            </div>
+
+            <div class="template-slide floral-slide-details">
+                <small>THE WEDDING DAY</small>
+                <h2>Join Us</h2>
+                <div class="floral-preview-line"></div>
+                <p>SATURDAY</p>
+                <h3>JUNE 20, 2027</h3>
+                <p>AT THREE O'CLOCK IN THE AFTERNOON</p>
+                <h3>THE GARDEN VENUE</h3>
+                <p>TAGAYTAY, PHILIPPINES</p>
+            </div>
+
+            <div class="template-slide floral-slide-story">
+                <small>A LITTLE BIT ABOUT US</small>
+                <h2>Our Love Story</h2>
+                <div class="floral-story-photo">♡</div>
+                <p>Two hearts, one beautiful journey, and a lifetime of love ahead.</p>
+            </div>
+
+            <div class="template-slide floral-slide-rsvp">
+                <div class="floral-preview-decoration">✿</div>
+                <small>WE HOPE YOU CAN JOIN US</small>
+                <h2>Save Our Date</h2>
+                <p>Your presence would mean the world to us.</p>
+                <div class="floral-preview-line"></div>
+                <h3>Kindly RSVP</h3>
+                <p>BEFORE JUNE 1, 2027</p>
+            </div>
+
+        </div>
+
+        <button type="button"
+            class="gallery-arrow gallery-prev"
+            onclick="changeTemplateSlide(this, -1)">‹</button>
+
+        <button type="button"
+            class="gallery-arrow gallery-next"
+            onclick="changeTemplateSlide(this, 1)">›</button>
+
+        <div class="gallery-dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+    <div class="card-info">
+        <h3>Floral Romance</h3>
+        <p>Soft flowers and romantic details</p>
+
+        <button onclick="chooseTemplate('Floral Romance')">
+            Choose Template
+        </button>
+    </div>
+
+</article>
+
+
+
+
+<!-- TEMPLATE 2: MINIMALIST LUXURY -->
+<article class="template-card">
+
+    <div class="template-gallery luxury-gallery">
+
+        <div class="template-gallery-header">
+            <span>MINIMALIST LUXURY</span>
+            <span class="gallery-counter">1 / 4</span>
+        </div>
+
+        <div class="template-carousel">
+
+            <!-- COVER -->
+            <div class="template-slide luxury-slide-cover">
+                <div class="luxury-top-line"></div>
+                <small>THE WEDDING CELEBRATION OF</small>
+                <h2>Alex <span>&</span> Maria</h2>
+                <p>TO FOREVER</p>
+                <div class="luxury-center-line"></div>
+                <h3>JUNE 20, 2027</h3>
+                <small>TAGAYTAY · PHILIPPINES</small>
+                <div class="luxury-bottom-line"></div>
+            </div>
+
+            <!-- WEDDING DETAILS -->
+            <div class="template-slide luxury-slide-details">
+                <small>THE HONOUR OF YOUR PRESENCE</small>
+                <h2>Is Requested</h2>
+                <div class="luxury-center-line"></div>
+                <p>SATURDAY</p>
+                <h3>20 JUNE 2027</h3>
+                <p>THREE O'CLOCK IN THE AFTERNOON</p>
+                <div class="luxury-center-line"></div>
+                <h3>THE GRAND GARDEN</h3>
+                <p>TAGAYTAY, PHILIPPINES</p>
+            </div>
+
+            <!-- OUR STORY -->
+            <div class="template-slide luxury-slide-story">
+                <small>CHAPTER ONE</small>
+                <h2>Our Story</h2>
+                <div class="luxury-story-photo">
+                    <span>THE TWO OF US</span>
+                </div>
+                <p>A beautiful beginning to a lifetime together.</p>
+                <div class="luxury-center-line"></div>
+                <small>ALWAYS & FOREVER</small>
+            </div>
+
+            <!-- RSVP -->
+            <div class="template-slide luxury-slide-rsvp">
+                <div class="luxury-center-line"></div>
+                <small>WITH LOVE AND GRATITUDE</small>
+                <h2>Kindly Reply</h2>
+                <p>We would be delighted to celebrate this special day with you.</p>
+                <div class="luxury-center-line"></div>
+                <h3>RSVP BY JUNE 1</h3>
+                <small>YOUR PRESENCE IS OUR PRESENT</small>
+            </div>
+
+        </div>
+
+        <button type="button"
+            class="gallery-arrow gallery-prev"
+            onclick="changeTemplateSlide(this, -1)">‹</button>
+
+        <button type="button"
+            class="gallery-arrow gallery-next"
+            onclick="changeTemplateSlide(this, 1)">›</button>
+
+        <div class="gallery-dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+    <div class="card-info">
+        <h3>Minimalist Luxury</h3>
+        <p>Simple, timeless and elegant</p>
+
+        <button onclick="chooseTemplate('Minimalist Luxury')">
+            Choose Template
+        </button>
+    </div>
+
+</article>
+
+
+
+
+<!-- TEMPLATE 3: GARDEN ROMANCE -->
+<article class="template-card">
+
+    <div class="template-gallery garden-gallery">
+
+        <div class="template-gallery-header">
+            <span>GARDEN ROMANCE</span>
+            <span class="gallery-counter">1 / 4</span>
+        </div>
+
+        <div class="template-carousel">
+
+            <!-- COVER -->
+            <div class="template-slide garden-slide-cover">
+                <div class="garden-leaves">❧</div>
+                <small>JOIN US TO CELEBRATE</small>
+                <h2>Alex <span>&</span> Maria</h2>
+                <p>A BEAUTIFUL BEGINNING</p>
+                <div class="garden-divider">❀</div>
+                <h3>JUNE 20, 2027</h3>
+                <p>TAGAYTAY, PHILIPPINES</p>
+                <div class="garden-leaves bottom">❧</div>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="template-slide garden-slide-details">
+                <div class="garden-leaves">❀</div>
+                <small>UNDER THE OPEN SKY</small>
+                <h2>The Celebration</h2>
+                <div class="garden-divider">✿</div>
+                <h3>SATURDAY, JUNE 20</h3>
+                <p>THREE O'CLOCK IN THE AFTERNOON</p>
+                <div class="garden-divider">❀</div>
+                <h3>THE SECRET GARDEN</h3>
+                <p>TAGAYTAY, PHILIPPINES</p>
+            </div>
+
+            <!-- OUR STORY -->
+            <div class="template-slide garden-slide-story">
+                <small>ROOTED IN LOVE</small>
+                <h2>Our Journey</h2>
+                <div class="garden-story-photo">
+                    <span>OUR FAVORITE MOMENT</span>
+                </div>
+                <p>Like flowers in a garden, our love continues to grow.</p>
+                <div class="garden-divider">❀</div>
+            </div>
+
+            <!-- RSVP -->
+            <div class="template-slide garden-slide-rsvp">
+                <div class="garden-leaves">❧</div>
+                <small>OUR DAY IS MORE BEAUTIFUL WITH YOU</small>
+                <h2>Will You Join Us?</h2>
+                <p>We would love to share this beautiful beginning with you.</p>
+                <div class="garden-divider">✿</div>
+                <h3>KINDLY RSVP</h3>
+                <p>BEFORE JUNE 1, 2027</p>
+            </div>
+
+        </div>
+
+        <button type="button"
+            class="gallery-arrow gallery-prev"
+            onclick="changeTemplateSlide(this, -1)">‹</button>
+
+        <button type="button"
+            class="gallery-arrow gallery-next"
+            onclick="changeTemplateSlide(this, 1)">›</button>
+
+        <div class="gallery-dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+    <div class="card-info">
+        <h3>Garden Romance</h3>
+        <p>Natural greenery and botanical charm</p>
+
+        <button onclick="chooseTemplate('Garden Romance')">
+            Choose Template
+        </button>
+    </div>
+
+</article>
+
+
+
+
+<!-- TEMPLATE 4: SWEET PASTEL -->
+<article class="template-card">
+
+    <div class="template-gallery pastel-gallery">
+
+        <div class="template-gallery-header">
+            <span>SWEET PASTEL</span>
+            <span class="gallery-counter">1 / 4</span>
+        </div>
+
+        <div class="template-carousel">
+
+            <!-- COVER -->
+            <div class="template-slide pastel-slide-cover">
+                <div class="pastel-decoration">♡ ✿ ♡</div>
+                <small>HAPPILY EVER AFTER</small>
+                <h2>Alex <span>&</span> Maria</h2>
+                <p>LET'S CELEBRATE LOVE</p>
+                <div class="pastel-divider"></div>
+                <h3>JUNE 20, 2027</h3>
+                <p>TAGAYTAY, PHILIPPINES</p>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="template-slide pastel-slide-details">
+                <div class="pastel-decoration">✿</div>
+                <small>IT'S A SPECIAL DAY!</small>
+                <h2>You're Invited</h2>
+                <div class="pastel-divider"></div>
+                <p>SATURDAY</p>
+                <h3>JUNE 20, 2027</h3>
+                <p>THREE O'CLOCK IN THE AFTERNOON</p>
+                <div class="pastel-divider"></div>
+                <h3>THE BLOOM GARDEN</h3>
+                <p>TAGAYTAY, PHILIPPINES</p>
+            </div>
+
+            <!-- OUR STORY -->
+            <div class="template-slide pastel-slide-story">
+                <small>OUR LITTLE LOVE STORY</small>
+                <h2>Made for Each Other</h2>
+                <div class="pastel-story-photo">
+                    <span>♡</span>
+                </div>
+                <p>Every love story is beautiful, but ours is our favorite.</p>
+                <div class="pastel-decoration">✿ ♡ ✿</div>
+            </div>
+
+            <!-- RSVP -->
+            <div class="template-slide pastel-slide-rsvp">
+                <div class="pastel-decoration">♡</div>
+                <small>LET'S MAKE MEMORIES</small>
+                <h2>Celebrate With Us!</h2>
+                <p>We can't wait to share our special day with you.</p>
+                <div class="pastel-divider"></div>
+                <h3>PLEASE RSVP</h3>
+                <p>BEFORE JUNE 1, 2027</p>
+                <div class="pastel-decoration">✿ ♡ ✿</div>
+            </div>
+
+        </div>
+
+        <button type="button"
+            class="gallery-arrow gallery-prev"
+            onclick="changeTemplateSlide(this, -1)">‹</button>
+
+        <button type="button"
+            class="gallery-arrow gallery-next"
+            onclick="changeTemplateSlide(this, 1)">›</button>
+
+        <div class="gallery-dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+    <div class="card-info">
+        <h3>Sweet Pastel</h3>
+        <p>Soft pastel colors and cute details</p>
+
+        <button onclick="chooseTemplate('Sweet Pastel')">
+            Choose Template
+        </button>
+    </div>
+
+</article>
+
+<!-- TEMPLATE 5: BURGUNDY & GOLD -->
+<article class="template-card">
+
+    <div class="template-gallery burgundy-gallery">
+
+        <div class="template-gallery-header">
+            <span>BURGUNDY & GOLD</span>
+            <span class="gallery-counter">1 / 4</span>
+        </div>
+
+        <div class="template-carousel">
+
+            <!-- COVER -->
+            <div class="template-slide burgundy-slide-cover">
+                <div class="burgundy-ornament">✦</div>
+                <small>TOGETHER WITH OUR FAMILIES</small>
+                <h2>Alex <span>&</span> Maria</h2>
+                <div class="burgundy-divider"></div>
+                <p>REQUEST THE HONOUR OF YOUR PRESENCE</p>
+                <h3>JUNE 20, 2027</h3>
+                <div class="burgundy-ornament bottom">✦</div>
+            </div>
+
+            <!-- DETAILS -->
+            <div class="template-slide burgundy-slide-details">
+                <div class="burgundy-ornament">❖</div>
+                <small>THE WEDDING CELEBRATION</small>
+                <h2>Our Special Day</h2>
+                <div class="burgundy-divider"></div>
+                <p>SATURDAY</p>
+                <h3>JUNE 20, 2027</h3>
+                <p>THREE O'CLOCK IN THE AFTERNOON</p>
+                <div class="burgundy-divider"></div>
+                <h3>THE GRAND BALLROOM</h3>
+                <p>TAGAYTAY, PHILIPPINES</p>
+            </div>
+
+            <!-- OUR STORY -->
+            <div class="template-slide burgundy-slide-story">
+                <small>A LOVE WRITTEN IN THE STARS</small>
+                <h2>Our Story</h2>
+                <div class="burgundy-story-photo">
+                    <span>♡</span>
+                </div>
+                <p>One beautiful love, countless precious memories, forever together.</p>
+                <div class="burgundy-divider"></div>
+                <small>CHAPTER ONE · FOREVER</small>
+            </div>
+
+            <!-- RSVP -->
+            <div class="template-slide burgundy-slide-rsvp">
+                <div class="burgundy-ornament">✦</div>
+                <small>YOUR PRESENCE IS OUR GREATEST GIFT</small>
+                <h2>Kindly RSVP</h2>
+                <p>We would be honored to celebrate our beginning with you.</p>
+                <div class="burgundy-divider"></div>
+                <h3>PLEASE REPLY BY JUNE 1</h3>
+                <div class="burgundy-ornament bottom">✦</div>
+            </div>
+
+        </div>
+
+        <button type="button"
+            class="gallery-arrow gallery-prev"
+            onclick="changeTemplateSlide(this, -1)">‹</button>
+
+        <button type="button"
+            class="gallery-arrow gallery-next"
+            onclick="changeTemplateSlide(this, 1)">›</button>
+
+        <div class="gallery-dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+    <div class="card-info">
+        <h3>Burgundy & Gold</h3>
+        <p>Rich burgundy and timeless golden elegance</p>
+
+        <button onclick="chooseTemplate('Burgundy & Gold')">
+            Choose Template
+        </button>
+    </div>
+
+</article>
+
+
+            </div>
+
+        </section>
+
+
+<!-- =================================
+     COUPLE DASHBOARD
+================================= -->
+
+<section id="coupleDashboard" style="display: none;">
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-heading">
+            <p class="eyebrow">YOUR WEDDING WORKSPACE</p>
+            <h2>Welcome to Your Dashboard ♡</h2>
+            <p>Everything you need to create your beautiful invitation.</p>
+        </div>
+
+        <div class="dashboard-welcome-card">
+            <p>YOUR SPECIAL DAY</p>
+            <h3 id="dashboardCoupleNames">Alex & Maria</h3>
+            <span id="dashboardWeddingDate">December 12, 2027</span>
+        </div>
+        
+<!-- INVITATION STATUS -->
+
+<div class="invitation-status-card">
+
+    <div class="status-heading">
+        <div>
+            <p class="status-eyebrow">YOUR INVITATION</p>
+            <h3>Invitation Status</h3>
+        </div>
+
+        <span class="draft-status" id="invitationStatusBadge">
+            DRAFT
+        </span>
+    </div>
+
+    <div class="status-details">
+
+        <div class="status-item">
+            <span>Status</span>
+            <strong id="invitationStatusText">Not yet published</strong>
+        </div>
+
+        <div class="status-item">
+            <span>Published Date</span>
+            <strong id="invitationPublishedDate">Not available</strong>
+        </div>
+
+    </div>
+
+    <div class="invitation-share-area">
+
+        <p>Your invitation link</p>
+
+        <div class="invitation-link-box">
+            <span id="invitationShareLink">
+                Your link will appear here after publishing.
+            </span>
+        </div>
+
+        <button type="button" id="copyInvitationLinkBtn" disabled>
+            Copy Invitation Link
+        </button>
+
+    </div>
+
+</div>
+
+
+        <div class="dashboard-actions">
+
+            <div class="dashboard-card">
+                <span>♡</span>
+                <h3>My Invitation</h3>
+                <p>Customize your wedding invitation.</p>
+                <button type="button" id="dashboardEditBtn">
+                    Edit Invitation
+                </button>
+            </div>
+
+            <div class="dashboard-card">
+                <span>✧</span>
+                <h3>Live Preview</h3>
+                <p>See how your invitation looks to guests.</p>
+                <button type="button" id="dashboardPreviewBtn">
+                    View Preview
+                </button>
+            </div>
+
+            <div class="dashboard-card">
+                <span>♡</span>
+                <h3>Guest Responses</h3>
+                <p>Manage your wedding RSVP responses.</p>
+                <button type="button" id="dashboardRsvpBtn">
+                    Manage RSVPs
+                </button>
+            </div>
+
+
+<div class="dashboard-card">
+    <span>↗</span>
+    <h3>Share Invitation</h3>
+    <p>Share your invitation with your guests.</p>
+    <button type="button" id="dashboardShareBtn">
+        Share Invitation
+    </button>
+</div>
+
+<div class="dashboard-card">
+    <span>⚙</span>
+    <h3>Account Settings</h3>
+    <p>Keep your account secure by updating your password.</p>
+    <button type="button" id="dashboardPasswordBtn">
+        Change Password
+    </button>
+</div>
+
+
+        </div>
+
+<!-- RSVP MANAGEMENT PANEL -->
+<div id="rsvpManagementPanel" style="display: none;">
+
+    <div class="rsvp-management-heading">
+        <p class="eyebrow">YOUR WEDDING GUESTS</p>
+        <h2>RSVP Management ♡</h2>
+        <p>Keep track of your guests and their responses.</p>
+    </div>
+
+    <div class="rsvp-summary-grid">
+
+        <div class="rsvp-summary-card">
+            <span>Total Responses</span>
+            <strong id="rsvpTotalResponses">0</strong>
+        </div>
+
+        <div class="rsvp-summary-card">
+            <span>Attending</span>
+            <strong id="rsvpAttendingCount">0</strong>
+        </div>
+
+        <div class="rsvp-summary-card">
+            <span>Declined</span>
+            <strong id="rsvpDeclinedCount">0</strong>
+        </div>
+
+        <div class="rsvp-summary-card">
+            <span>Confirmed Guests</span>
+            <strong id="rsvpTotalGuests">0</strong>
+        </div>
+
+    </div>
+
+    <div class="rsvp-response-container">
+
+        <div class="rsvp-response-header">
+            <div>
+                <h3>Guest Responses</h3>
+                <p>View your guests' attendance confirmations.</p>
+            </div>
+
+            <button type="button" id="refreshRsvpBtn">
+                ↻ Refresh
+            </button>
+        </div>
+
+        <div id="rsvpResponseList">
+            <p>No responses to display yet.</p>
+        </div>
+
+    </div>
+
+    <button type="button" id="backToDashboardFromRsvp">
+        ← Back to Dashboard
+    </button>
+
+    <p id="rsvpManagementStatus"></p>
+
+</div>
+
+
+<!-- CHANGE PASSWORD PANEL -->
+<div id="changePasswordPanel" style="display: none;">
+
+    <div class="password-panel-heading">
+        <p class="eyebrow">ACCOUNT SECURITY</p>
+        <h2>Change Your Password ♡</h2>
+        <p>Choose a strong password to keep your account secure.</p>
+    </div>
+
+    <form id="changePasswordForm" class="password-form">
+
+        <label for="newCouplePassword">New Password</label>
+        <input
+            type="password"
+            id="newCouplePassword"
+            minlength="12"
+            required
+            placeholder="Enter your new password"
+        >
+
+        <label for="confirmCouplePassword">Confirm New Password</label>
+        <input
+            type="password"
+            id="confirmCouplePassword"
+            minlength="12"
+            required
+            placeholder="Confirm your new password"
+        >
+
+        <button type="submit" id="saveCouplePasswordBtn">
+            Save New Password
+        </button>
+
+        <p id="changePasswordStatus"></p>
+
+    </form>
+
+    <button type="button" id="backToDashboardFromPassword">
+        ← Back to Dashboard
+    </button>
+
+</div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     COUPLE LOGIN
+================================= -->
+
+<section id="coupleLogin" style="display: none;">
+
+    <div class="login-container">
+
+        <p class="login-eyebrow">WELCOME TO EVER AFTER</p>
+
+        <h2>Welcome Back ♡</h2>
+
+        <p class="login-description">
+            Sign in to continue creating your beautiful wedding invitation.
+        </p>
+
+        <div class="login-card">
+
+            <label for="coupleUsername">Email</label>
+            <input type="text" id="coupleUsername"
+                   placeholder="Enter your email">
+
+            <label for="couplePassword">Password</label>
+            <input type="password" id="couplePassword"
+                   placeholder="Enter your password">
+
+            <button type="button" id="coupleLoginBtn">
+                Log In
+            </button>
+
+            <p class="login-note">
+                Your account is provided by Ever After.
+            </p>
+
+        </div>
+
+        <button type="button" id="backToHomeBtn">
+            ← Back to Home
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     OWNER ADMIN LOGIN
+================================= -->
+
+<section id="ownerLogin" style="display: none;">
+
+    <div class="login-container">
+
+        <p class="login-eyebrow">EVER AFTER • PRIVATE ACCESS</p>
+
+        <h2>Owner Login ♡</h2>
+
+        <p class="login-description">
+            Welcome back. Sign in to manage your Ever After platform.
+        </p>
+
+        <div class="login-card">
+
+<label for="ownerUsername">Admin Email</label>
+<input type="text" id="ownerUsername" placeholder="Enter your admin email">
+
+            <label for="ownerPassword">Admin Password</label>
+            <input type="password" id="ownerPassword"
+                   placeholder="Enter admin password">
+
+            <button type="button" id="ownerLoginBtn">
+                Access Admin Dashboard
+            </button>
+
+            <p class="login-note">
+                Authorized platform owner access only.
+            </p>
+
+        </div>
+
+        <button type="button" id="ownerBackToHomeBtn">
+            ← Back to Home
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =================================
+     OWNER ADMIN DASHBOARD
+================================= -->
+
+<section id="ownerAdmin" style="display: none;">
+
+    <div class="admin-container">
+
+        <div class="admin-heading">
+            <p class="admin-eyebrow">EVER AFTER • PLATFORM MANAGEMENT</p>
+            <h2>Owner Admin ♡</h2>
+            <p>Manage your couples and their invitation access.</p>
+            
+            <button type="button" id="ownerLogoutBtn">
+    Log Out
+</button>
+        </div>
+
+        <div class="admin-overview">
+
+            <div class="admin-stat-card">
+                <span>Total Couples</span>
+                <h3 id="totalCouples">0</h3>
+            </div>
+
+            <div class="admin-stat-card">
+                <span>Active Accounts</span>
+                <h3 id="activeCouples">0</h3>
+            </div>
+
+            <div class="admin-stat-card">
+                <span>Invitations</span>
+                <h3 id="totalInvitations">0</h3>
+            </div>
+
+        </div>
+
+        <div class="admin-account-section">
+
+            <h3>Create Couple Account</h3>
+            <p>Give a couple access to their wedding workspace.</p>
+
+            <label for="adminCoupleNames">Couple Names</label>
+            <input type="text" id="adminCoupleNames"
+                   placeholder="e.g. Alex & Maria">
+
+<label for="adminUsername">Couple Email</label>
+<input
+    type="email"
+    id="adminUsername"
+    placeholder="Enter couple's email"
+>
+
+            <label for="adminPassword">Temporary Password</label>
+<input
+    type="password"
+    id="adminPassword"
+    placeholder="Create a password (at least 12 characters)"
+>
+
+            <label for="adminWeddingDate">Wedding Date</label>
+            <input type="date" id="adminWeddingDate">
+
+            <button type="button" id="createCoupleAccountBtn">
+                Create Couple Account
+            </button>
+
+            <p id="adminAccountStatus"></p>
+
+        </div>
+
+        <div class="admin-couples-section">
+
+            <h3>Couple Accounts</h3>
+            <p>View and manage the couples you've registered.</p>
+
+            <div id="adminCouplesList">
+                <p class="admin-empty-message">
+                    No couple accounts created yet.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =================================
+     GUEST INVITATION VIEW
+================================= -->
+
+<section id="guestView" style="display: none;">
+
+    <div class="guest-invitation-container">
+        
+        <button type="button" id="backToBuilderBtn">
+    ← Back to Builder
+</button>
+
+<div class="guest-envelope" id="guestEnvelope">
+
+<div class="envelope-art"
+     role="button"
+     tabindex="0"
+     aria-label="Open wedding invitation">
+
+        <!-- Back of envelope -->
+        <div class="envelope-back"></div>
+
+        <!-- Invitation letter -->
+        <div class="envelope-letter">
+            <span>WEDDING INVITATION</span>
+        </div>
+
+        <!-- Top folded flap -->
+        <div class="envelope-flap"></div>
+
+        <!-- Front folded pocket -->
+        <div class="envelope-front"></div>
+
+        <!-- Decorative seal -->
+<div class="envelope-seal">
+
+    <span id="envelopeInitials">A & M</span>
+
+    <img
+        id="envelopeSealLogo"
+        src=""
+        alt="Couple monogram"
+        style="display: none;"
+    >
+
+</div>
+
+    </div>
+
+<div class="envelope-instructions">
+    <p class="envelope-instruction">
+        Tap the envelope to open
+    </p>
+
+    <p class="envelope-helper">
+        Please tap the envelope above to view the wedding invitation.
+    </p>
+</div>
+
+</div>
+
+
+<div id="guestInvitationContent" style="display: none;">
+
+    <div id="guestInvitationCard" class="invitation-card">
+
+        <!-- Guest invitation pages will be copied here -->
+
+    </div>
+
+    <div class="invitation-navigation" id="guestInvitationNavigation">
+        <button type="button" id="guestPrevPageBtn" disabled>
+            ← Previous
+        </button>
+
+        <span id="guestPageIndicator">Page 1</span>
+
+        <button type="button" id="guestNextPageBtn">
+            Next →
+        </button>
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+
+<!-- WEDDING CUSTOMIZATION EDITOR -->
+<section
+    id="invitationPreview"
+    class="preview-section"
+    style="display: none;"
+>
+
+<button type="button" id="backToDashboardBtn">
+    ← Back to Dashboard
+</button>
+
+<div class="section-heading">
+
+    <p class="eyebrow">MAKE IT YOURS</p>
+
+    <h2>Customize Your Wedding Invitation ♡</h2>
+
+    <p>
+        Add your wedding details and personalize your invitation.
+    </p>
+
+</div>
+
+<div class="editor-container">
+
+    <!-- EDITOR FORM -->
+    <div class="editor-form">
+
+        <div class="builder-navigation">
+
+            <button type="button" class="builder-tab active"
+                data-tab="details">Details</button>
+
+            <button type="button" class="builder-tab"
+                data-tab="design">Design</button>
+
+            <button type="button" class="builder-tab"
+                data-tab="photos">Photos</button>
+
+            <button type="button" class="builder-tab"
+                data-tab="sections">Sections</button>
+
+            <button type="button" class="builder-tab"
+                data-tab="locations">Locations</button>
+
+            <button type="button" class="builder-tab"
+                data-tab="settings">Settings</button>
+
+        </div>
+
+        <div class="builder-panel active" id="tab-details">
+
+<div class="details-editor">
+
+    <div class="details-editor-heading">
+        <span>YOUR SPECIAL DAY</span>
+        <h3>Wedding Details</h3>
+        <p>Tell us about the beautiful celebration you're planning.</p>
+    </div>
+
+    <!-- PARTNER 1 -->
+    <label for="name1">Partner 1 Name</label>
+    <input
+        type="text"
+        id="name1"
+        placeholder="Enter first partner's name"
+        value="Alex"
+    >
+
+    <!-- PARTNER 2 -->
+    <label for="name2">Partner 2 Name</label>
+    <input
+        type="text"
+        id="name2"
+        placeholder="Enter second partner's name"
+        value="Maria"
+    >
+
+    <!-- WEDDING DATE -->
+    <label for="weddingDate">Wedding Date</label>
+    <input
+        type="date"
+        id="weddingDate"
+        value="2027-12-12"
+    >
+
+    <!-- WEDDING TIME -->
+    <label for="weddingTime">Ceremony Time</label>
+    <input
+        type="text"
+        id="weddingTime"
+        placeholder="Example: 3:00 PM"
+        value="3:00 PM"
+    >
+
+    <!-- WEDDING VENUE -->
+    <label for="weddingVenue">Wedding Venue</label>
+    <input
+        type="text"
+        id="weddingVenue"
+        placeholder="Enter wedding venue"
+        value="Our Wedding Venue"
+    >
+
+    <!-- INVITATION MESSAGE -->
+    <label for="weddingMessage">Invitation Message</label>
+    <textarea
+        id="weddingMessage"
+        placeholder="Write your invitation message"
+    >Join us as we celebrate our special day.</textarea>
+
+
+</div>
+</div>
+<div id="tab-design" class="builder-panel">
+    <!-- WEDDING COLOR CUSTOMIZATION -->
+<div class="color-customization">
+    <h3>Choose Your Wedding Colors ♡</h3>
+    <p>Select a palette that matches your wedding theme.</p>
+
+    <label for="weddingColor">Custom Wedding Color</label>
+    <input type="color" id="weddingColor" value="#fff0f3">
+
+    <p class="color-label">Choose a preset palette:</p>
+
+    <div class="color-options">
+
+        <button type="button" class="color-option blush"
+            onclick="setWeddingColor('#fff0f3')">
+            Blush Pink
+        </button>
+
+        <button type="button" class="color-option sage"
+            onclick="setWeddingColor('#eaf0e5')">
+            Sage Green
+        </button>
+
+        <button type="button" class="color-option champagne"
+            onclick="setWeddingColor('#f5f0e8')">
+            Champagne
+        </button>
+
+        <button type="button" class="color-option lavender"
+            onclick="setWeddingColor('#eee6f7')">
+            Lavender
+        </button>
+
+        <button type="button" class="color-option burgundy"
+            onclick="setWeddingColor('#ead0d5')">
+            Burgundy Romance
+        </button>
+
+        <button type="button" class="color-option golden"
+            onclick="setWeddingColor('#f5e6b8')">
+            Golden Elegance
+        </button>
+
+        <button type="button" class="color-option dusty-blue"
+            onclick="setWeddingColor('#dce7f0')">
+            Dusty Blue
+        </button>
+
+        <button type="button" class="color-option terracotta"
+            onclick="setWeddingColor('#edc9b5')">
+            Terracotta
+        </button>
+
+        <button type="button" class="color-option olive"
+            onclick="setWeddingColor('#dce2cb')">
+            Olive Green
+        </button>
+
+        <button type="button" class="color-option mauve"
+            onclick="setWeddingColor('#e5cbd9')">
+            Mauve
+        </button>
+
+    </div>
+</div>
+     
+     <!-- DECORATION CUSTOMIZATION -->
+<div class="decoration-editor">
+
+    <h3>Invitation Decorations</h3>
+    <p>Add flowers, leaves, or other decorative elements to your invitation.</p>
+
+    <label for="decorationUpload">Upload Decoration</label>
+    <input
+        type="file"
+        id="decorationUpload"
+        accept="image/png,image/webp"
+    >
+<label for="decorationSelect">Your Decorations</label>
+
+<select id="decorationSelect">
+    <option value="">No decorations added yet</option>
+</select>
+
+<label for="decorationTargetPage">Move Decoration To</label>
+
+<select id="decorationTargetPage">
+    <option value="detailsPage">Wedding Details</option>
+    <option value="storyPage">Love Story</option>
+    <option value="entouragePage">Entourage</option>
+    <option value="dressCodePage">Dress Code</option>
+    <option value="galleryPage">Photo Gallery</option>
+    <option value="giftPage">Gift Information</option>
+    <option value="rsvpPage">RSVP</option>
+    <option value="locationsPage">Locations</option>
+</select>
+
+<button type="button" id="moveDecorationBtn">
+    Move Decoration
+</button>
+
+    <label for="decorationPosition">Decoration Position</label>
+    <select id="decorationPosition">
+<option value="top-left">Top Left</option>
+<option value="top-center">Top Center</option>
+<option value="top-right">Top Right</option>
+<option value="bottom-left">Bottom Left</option>
+<option value="bottom-center">Bottom Center</option>
+<option value="bottom-right">Bottom Right</option>
+    </select>
+
+<label for="decorationSize">Decoration Size</label>
+
+<input
+    type="range"
+    id="decorationSize"
+    min="50"
+    max="200"
+    value="100"
+    step="5"
+>
+
+<p id="sizeValue">100%</p>
+
+    <label for="decorationOpacity">Decoration Opacity</label>
+    <input
+        type="range"
+        id="decorationOpacity"
+        min="10"
+        max="100"
+        value="65"
+    >
+    <p id="opacityValue">65%</p>
+
+    <button type="button" id="removeDecorationBtn">
+        Remove Decoration
+    </button>
+
+</div>
+
+
+
+     
+     
+     
+
+
+
+<!-- TEXT COLOR CUSTOMIZATION -->
+<div class="text-color-editor">
+
+    <h3>Text Customization</h3>
+    <p>Choose the text colors that match your wedding theme.</p>
+
+    <div class="color-option">
+        <label for="coupleNameColor">Couple Names</label>
+        <div class="color-input-group">
+            <input type="color" id="coupleNameColor" value="#874f59">
+            <input type="text" class="hex-color-input" id="coupleNameHex" value="#874F59" inputmode="text"
+autocomplete="off"
+spellcheck="false">
+        </div>
+    </div>
+
+    <div class="color-option">
+        <label for="headingColor">Headings</label>
+        <div class="color-input-group">
+            <input type="color" id="headingColor" value="#874f59">
+            <input type="text" class="hex-color-input" id="headingColorHex" value="#874F59" inputmode="text"
+autocomplete="off"
+spellcheck="false">
+        </div>
+    </div>
+
+    <div class="color-option">
+        <label for="bodyTextColor">Body Text</label>
+        <div class="color-input-group">
+            <input type="color" id="bodyTextColor" value="#765e5e">
+            <input type="text" class="hex-color-input" id="bodyTextColorHex" value="#765E5E"  inputmode="text"
+autocomplete="off"
+spellcheck="false">
+        </div>
+    </div>
+
+    <div class="color-option">
+        <label for="accentTextColor">Accent Details</label>
+        <div class="color-input-group">
+            <input type="color" id="accentTextColor" value="#c17c87">
+            <input type="text" class="hex-color-input" id="accentTextColorHex" value="#C17C87"  inputmode="text"
+autocomplete="off"
+spellcheck="false">
+        </div>
+    </div>
+
+    <div class="color-option">
+        <label for="sectionCardHeadingColor">Section Card Headings</label>
+        <div class="color-input-group">
+            <input type="color" id="sectionCardHeadingColor" value="#65434d">
+            <input type="text" class="hex-color-input" id="sectionCardHeadingColorHex" value="#65434D"  inputmode="text"
+autocomplete="off"
+spellcheck="false">
+        </div>
+    </div>
+
+    <div class="color-option">
+        <label for="sectionCardBodyColor">Section Card Body Text</label>
+        <div class="color-input-group">
+            <input type="color" id="sectionCardBodyColor" value="#705b61">
+            <input type="text" class="hex-color-input" id="sectionCardBodyColorHex" value="#705B61"  inputmode="text"
+autocomplete="off"
+spellcheck="false">
+        </div>
+    </div>
+
+    <button type="button" id="resetTextColorsBtn">
+        Reset to Theme Colors
+    </button>
+
+</div>
+
+<!-- FONT STYLE CUSTOMIZATION -->
+
+<!-- PREMIUM TYPOGRAPHY CUSTOMIZATION -->
+<div class="font-style-editor">
+
+    <h3>Typography Customization</h3>
+    <p>Choose the perfect font combination for your invitation.</p>
+
+    <div class="font-option">
+        <label for="coupleNamesFont">Couple Names</label>
+        <select id="coupleNamesFont">
+            <option value="great-vibes">Great Vibes</option>
+            <option value="allura">Allura</option>
+            <option value="playfair">Playfair Display</option>
+            <option value="cormorant">Cormorant Garamond</option>
+            <option value="bodoni">Bodoni Moda</option>
+            <option value="prata">Prata</option>
+            <option value="dancing-script">Dancing Script</option>
+        </select>
+    </div>
+
+    <div class="font-option">
+        <label for="mainHeadingFont">Main Headings</label>
+        <select id="mainHeadingFont">
+            <option value="cinzel">Cinzel</option>
+            <option value="playfair">Playfair Display</option>
+            <option value="bodoni">Bodoni Moda</option>
+            <option value="dm-serif">DM Serif Display</option>
+            <option value="prata">Prata</option>
+            <option value="cormorant">Cormorant Garamond</option>
+            <option value="libre-baskerville">Libre Baskerville</option>
+        </select>
+    </div>
+
+    <div class="font-option">
+        <label for="sectionHeadingFont">Section Headings</label>
+        <select id="sectionHeadingFont">
+            <option value="cormorant">Cormorant Garamond</option>
+            <option value="playfair">Playfair Display</option>
+            <option value="cinzel">Cinzel</option>
+            <option value="bodoni">Bodoni Moda</option>
+            <option value="dm-serif">DM Serif Display</option>
+            <option value="libre-baskerville">Libre Baskerville</option>
+        </select>
+    </div>
+
+    <div class="font-option">
+        <label for="bodyFont">Body Text</label>
+        <select id="bodyFont">
+            <option value="lato">Lato</option>
+            <option value="montserrat">Montserrat</option>
+            <option value="poppins">Poppins</option>
+            <option value="open-sans">Open Sans</option>
+            <option value="lora">Lora</option>
+            <option value="raleway">Raleway</option>
+            <option value="jost">Jost</option>
+            <option value="dm-sans">DM Sans</option>
+        </select>
+    </div>
+
+</div>
+
+<div class="design-editor-section seal-customization-panel">
+
+    <div class="seal-panel-heading">
+        <span class="seal-panel-eyebrow">THE FINISHING TOUCH</span>
+        <h3>Personalize Your Seal</h3>
+        <p>
+            Add a meaningful detail to your envelope.
+            Make it uniquely yours.
+        </p>
+    </div>
+
+    <div class="seal-option-group">
+
+        <div class="seal-option-heading">
+            <span class="seal-option-number">01</span>
+            <div>
+                <h4>Seal Design</h4>
+                <p>Choose what appears on your wax seal.</p>
+            </div>
+        </div>
+
+        <label for="sealStyle">Seal Content</label>
+
+        <select id="sealStyle">
+            <option value="initials">Automatic Couple Initials</option>
+            <option value="image">Upload Logo / Monogram</option>
+        </select>
+
+        <div id="sealUploadContainer" style="display: none;">
+
+            <label for="sealLogoUpload">Your Wedding Logo</label>
+
+            <input
+                type="file"
+                id="sealLogoUpload"
+                accept="image/png, image/jpeg, image/webp"
+            >
+
+            <button type="button" id="removeSealLogo">
+                Remove Uploaded Logo
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="seal-option-divider"></div>
+
+    <div class="seal-option-group">
+
+        <div class="seal-option-heading">
+            <span class="seal-option-number">02</span>
+            <div>
+                <h4>Seal Color</h4>
+                <p>Set the perfect background for your design.</p>
+            </div>
+        </div>
+
+        <label for="sealBackgroundStyle">Background Finish</label>
+
+        <select id="sealBackgroundStyle">
+            <option value="original">Original Theme Color</option>
+            <option value="gold">Luxury Gold</option>
+            <option value="ivory">Elegant Ivory</option>
+            <option value="custom">Custom Color</option>
+        </select>
+
+        <div id="customSealColorContainer" style="display: none;">
+
+            <label for="customSealColor">Choose Your Color</label>
+
+            <input
+                type="color"
+                id="customSealColor"
+                value="#d8b56b"
+            >
+
+        </div>
+
+    </div>
+
+    <div class="seal-panel-footer">
+        <span>✧</span>
+        A little detail that makes a lasting impression.
+    </div>
+
+
+
+    
+
+</div>
+</div>
+
+<div class="builder-panel" id="tab-photos">
+ 
+<!-- COUPLE PHOTO UPLOAD -->
+<div class="couple-photo-editor">
+
+    <div class="couple-photo-heading">
+        <span>CAPTURE YOUR MOMENT</span>
+        <h3>Couple Photo</h3>
+        <p>
+            Choose a beautiful photo to make your invitation
+            more personal and memorable.
+        </p>
+    </div>
+
+    <label for="couplePhoto">
+        Upload Couple Photo
+    </label>
+
+    <div class="couple-photo-upload-area">
+        <span class="couple-photo-icon">♡</span>
+        <p class="couple-photo-upload-title">Choose your favorite photo</p>
+        <p class="couple-photo-upload-subtitle">
+            JPG, PNG or WEBP
+        </p>
+
+        <input
+            type="file"
+            id="couplePhoto"
+            accept="image/*"
+        >
+    </div>
+
+    <p class="upload-hint">
+        Maximum file size: 5MB.
+    </p>
+
+</div>
+
+</div>
+
+<div class="builder-panel" id="tab-sections">
+    <!-- Move section switches and section editors here -->
+    <!-- INVITATION SECTIONS EDITOR -->
+
+<div class="sections-customization">
+
+
+    <h3>Customize Your Invitation ♡</h3>
+    <p>Choose which sections you want to show in your invitation.</p>
+
+    <div class="section-toggle" >
+        <label for="storyToggle">Our Love Story</label>
+        <input type="checkbox" id="storyToggle" checked>
+    </div>
+
+    <div class="section-toggle" >
+        <label for="entourageToggle">Wedding Entourage</label>
+        <input type="checkbox" id="entourageToggle" checked>
+    </div>
+
+    <div class="section-toggle" >
+        <label for="dressCodeToggle">Dress Code</label>
+        <input type="checkbox" id="dressCodeToggle" checked>
+    </div>
+
+    <div class="section-toggle" >
+        <label for="galleryToggle">Photo Gallery</label>
+        <input type="checkbox" id="galleryToggle" checked>
+    </div>
+
+    <div class="section-toggle" >
+        <label for="giftToggle">Gift Information</label>
+        <input type="checkbox" id="giftToggle" checked>
+    </div>
+
+    <div class="section-toggle" >
+        <label for="rsvpToggle">RSVP</label>
+        <input type="checkbox" id="rsvpToggle" checked>
+    </div>
+
+    <div class="section-toggle" >
+        <label for="mapToggle">Location Map</label>
+        <input type="checkbox" id="mapToggle" checked>
+    </div>
+
+</div>
+
+<div class="section-editor" id="storyEditor">
+    <h4>Our Love Story ♡</h4>
+
+    <label for="loveStoryInput">Write your love story</label>
+    <textarea
+        id="loveStoryInput"
+        placeholder="Tell your guests how your love story began..."
+        rows="5"
+    ></textarea>
+
+<div class="story-photo-editor">
+
+    <h5>Photo Story</h5>
+    <p>Your photos can tell your story even without written text.</p>
+
+    <label>Featured Photo</label>
+    <input type="file" id="storyPhoto1" accept="image/*">
+
+    <label>Supporting Photo 1</label>
+    <input type="file" id="storyPhoto2" accept="image/*">
+
+    <label>Supporting Photo 2</label>
+    <input type="file" id="storyPhoto3" accept="image/*">
+
+    <p class="photo-upload-note">
+        Upload up to 3 photos. Maximum 5MB each.
+    </p>
+
+    <hr>
+<hr>
+
+<h5>Written Love Story</h5>
+
+<label>
+    <input type="checkbox" id="writtenStoryToggle" checked>
+    Show written love story
+</label>
+    <h5>Photo Captions & Chapters</h5>
+
+    <label>
+        <input type="checkbox" id="storyCaptionsToggle" checked>
+        Show photo captions
+    </label>
+
+    <label for="storyCaption1">Photo 1 Caption</label>
+    <input type="text" id="storyCaption1" value="Cherished Moments">
+
+    <label for="storyChapter1">Photo 1 Chapter</label>
+    <input type="text" id="storyChapter1" value="CHAPTER I">
+
+    <label for="storyCaption2">Photo 2 Caption</label>
+    <input type="text" id="storyCaption2" value="Timeless Love">
+
+    <label for="storyChapter2">Photo 2 Chapter</label>
+    <input type="text" id="storyChapter2" value="CHAPTER II">
+
+    <label for="storyCaption3">Photo 3 Caption</label>
+    <input type="text" id="storyCaption3" value="Forever & Always">
+
+    <label for="storyChapter3">Photo 3 Chapter</label>
+    <input type="text" id="storyChapter3" value="CHAPTER III · ETERNAL BOND">
+
+</div>
+</div>
+
+<!-- ENTOURAGE EDITOR -->
+<div class="section-editor" id="entourageEditor">
+
+    <h4>Wedding Entourage ♡</h4>
+
+    <p class="entourage-description">
+        Introduce the special people who will stand beside you
+        on your wedding day.
+    </p>
+    <div class="entourage-background-editor">
+
+    <h5>♡ Entourage Background Photo</h5>
+
+    <p>Upload a couple photo to create a soft, romantic backdrop.</p>
+
+    <label for="entourageBackgroundInput">
+        Choose Background Photo
+    </label>
+
+    <input
+        type="file"
+        id="entourageBackgroundInput"
+        accept="image/*"
+    >
+
+    <p class="photo-upload-note">
+        Recommended: A portrait photo with a simple background. Maximum 5MB.
+    </p>
+
+</div>
+
+    <!-- FAMILY -->
+    <div class="entourage-group">
+
+        <h5>♡ The Families</h5>
+
+        <label for="brideParents">Parents of the Bride</label>
+        <textarea id="brideParents" rows="2"
+            placeholder="Enter parents' names"></textarea>
+
+        <label for="groomParents">Parents of the Groom</label>
+        <textarea id="groomParents" rows="2"
+            placeholder="Enter parents' names"></textarea>
+
+    </div>
+
+    <!-- SPONSORS -->
+    <div class="entourage-group">
+
+        <h5>♡ Principal Sponsors</h5>
+
+        <label for="principalSponsors">Principal Sponsors</label>
+        <textarea id="principalSponsors" rows="4"
+            placeholder="Enter each sponsor's name on a new line"></textarea>
+
+    </div>
+
+    <!-- WEDDING PARTY -->
+    <div class="entourage-group">
+
+        <h5>♡ Wedding Party</h5>
+
+        <label for="bridesmaids">Bridesmaids</label>
+        <textarea id="bridesmaids" rows="4"
+            placeholder="Enter each bridesmaid's name on a new line"></textarea>
+
+        <label for="groomsmen">Groomsmen</label>
+        <textarea id="groomsmen" rows="4"
+            placeholder="Enter each groomsman's name on a new line"></textarea>
+
+    </div>
+
+</div>
+<!-- DRESS CODE EDITOR -->
+<div class="section-editor" id="dressCodeEditor">
+    <h4>Dress Code ♡</h4>
+
+    <label for="dressCodeInput">Attire Instructions</label>
+    <input
+        type="text"
+        id="dressCodeInput"
+        placeholder="Example: Formal Attire"
+    >
+
+    <label for="dressCodeNoteInput">Additional Instructions</label>
+    <textarea
+        id="dressCodeNoteInput"
+        rows="3"
+        placeholder="Example: We encourage guests to wear neutral colors."
+    ></textarea>
+</div>
+
+<!-- PHOTO GALLERY EDITOR -->
+
+<div class="section-editor" id="galleryEditor">
+
+    <h4>Photo Gallery ♡</h4>
+
+    <p class="gallery-description">
+        Turn your favorite photographs into a collection of memories.
+    </p>
+
+    <label for="galleryPhotos">Upload One Wedding Photo</label>
+
+    <input
+        type="file"
+        id="galleryPhotos"
+        accept="image/*"
+    >
+
+    <div id="galleryPhotoDetails" style="display: none;">
+
+        <label for="galleryPhotoDate">Photo Date</label>
+        <input
+            type="text"
+            id="galleryPhotoDate"
+            placeholder="e.g. June 2025"
+        >
+
+        <label for="galleryPhotoCaption">Photo Caption</label>
+        <textarea
+            id="galleryPhotoCaption"
+            rows="2"
+            placeholder="Write a short memory or caption..."
+        ></textarea>
+
+        <button type="button" id="saveGalleryPhotoBtn">
+            Save Photo
+        </button>
+
+    </div>
+
+    <p class="gallery-hint">
+        Upload and save each photo individually. You can add up to 10 photos.
+    </p>
+
+    <div id="galleryUploadPreview" class="gallery-upload-preview"></div>
+
+</div>
+
+
+<!-- GIFT INFORMATION EDITOR -->
+<div class="section-editor" id="giftEditor">
+    <h4>Gift Information ♡</h4>
+
+    <label for="giftMessageInput">Gift Message</label>
+    <textarea
+        id="giftMessageInput"
+        rows="3"
+        placeholder="Write a kind message for your guests..."
+    ></textarea>
+
+    <label for="giftPreferenceInput">Gift Preference</label>
+    <select id="giftPreferenceInput">
+        <option value="No preference">No preference</option>
+        <option value="Monetary gifts">Monetary gifts</option>
+        <option value="Gift items">Gift items</option>
+        <option value="Gift registry">Gift registry</option>
+    </select>
+
+    <label for="giftDetailsInput">Gift Details or Account Information</label>
+    <textarea
+        id="giftDetailsInput"
+        rows="3"
+        placeholder="Optional: Add bank transfer or gift registry details."
+    ></textarea>
+</div>
+<div class="section-editor" id="rsvpEditor">
+    <h4>RSVP Settings ♡</h4>
+
+    <label for="rsvpMessageInput">RSVP Message</label>
+    <textarea id="rsvpMessageInput" rows="3"
+        placeholder="We hope you can celebrate with us!"></textarea>
+
+    <label for="rsvpDeadlineInput">RSVP Deadline</label>
+    <input type="date" id="rsvpDeadlineInput">
+</div>
+
+</div>
+</div>
+
+
+<div class="builder-panel" id="tab-locations">
+    
+    <div class="section-editor" id="locationsEditor">
+
+    <h4>Wedding Locations ♡</h4>
+
+    <p class="locations-editor-description">
+        Share the special places where your wedding celebration will take place.
+    </p>
+
+    <!-- CEREMONY EDITOR -->
+    <div class="location-editor-card">
+
+        <div class="location-editor-heading">
+            <span>✧</span>
+            <h5>Ceremony</h5>
+            <p>Where your forever begins</p>
+        </div>
+
+        <label for="ceremonyVenueInput">Venue Name</label>
+        <input type="text" id="ceremonyVenueInput"
+            placeholder="Example: St. Mary's Church">
+
+        <label for="ceremonyAddressInput">Complete Address</label>
+        <textarea id="ceremonyAddressInput" rows="2"
+            placeholder="Enter ceremony address"></textarea>
+
+        <label for="ceremonyMapInput">Google Maps Link</label>
+        <input type="url" id="ceremonyMapInput"
+            placeholder="Paste Google Maps link">
+
+        <p class="location-editor-hint">
+            ♡ Add a Google Maps link so guests can easily find the venue.
+        </p>
+
+    </div>
+
+    <!-- RECEPTION EDITOR -->
+    <div class="location-editor-card">
+
+        <div class="location-editor-heading">
+            <span>✧</span>
+            <h5>Reception</h5>
+            <p>Where the celebration continues</p>
+        </div>
+
+        <label for="receptionVenueInput">Venue Name</label>
+        <input type="text" id="receptionVenueInput"
+            placeholder="Example: Garden Events Place">
+
+        <label for="receptionAddressInput">Complete Address</label>
+        <textarea id="receptionAddressInput" rows="2"
+            placeholder="Enter reception address"></textarea>
+
+        <label for="receptionMapInput">Google Maps Link</label>
+        <input type="url" id="receptionMapInput"
+            placeholder="Paste Google Maps link">
+
+        <p class="location-editor-hint">
+            ♡ Make sure your map link leads to the correct reception venue.
+        </p>
+
+    </div>
+</div>
+</div>
+
+
+<div class="builder-panel" id="tab-settings">
+    <!-- Move language selector and other settings here -->
+<div class="language-editor">
+    
+    <div class="language-editor-heading">
+        <span>MAKE IT PERSONAL</span>
+        <h3>Invitation Language</h3>
+        <p>
+            Choose how your wedding invitation
+            will speak to your guests.
+        </p>
+    </div>
+    
+    <label for="languageSelect">Choose Language</label>
+    
+    <select id="languageSelect">
+        <option value="english">English</option>
+        <option value="filipino">Filipino</option>
+        <option value="taglish">Taglish</option>
+    </select>
+    
+</div>
+<!-- SAVE AND LOAD DRAFT -->
+<div class="draft-editor">
+
+    <div class="draft-editor-heading">
+        <span>YOUR INVITATION</span>
+        <h3>Save Your Progress</h3>
+        <p>Keep your wedding invitation safe and continue editing whenever you're ready.</p>
+    </div>
+
+    <button type="button" id="saveDraftBtn">
+        Save Draft
+    </button>
+
+    <button type="button" id="loadDraftBtn">
+        Load Saved Draft
+    </button>
+
+<button type="button" id="publishInvitationBtn">
+        Publish Invitation
+    </button>
+    
+    <button type="button" id="resetDesignBtn">
+        Reset Design
+    </button>
+    
+    <button type="button" id="previewGuestViewBtn">
+    Preview Guest Invitation
+</button>
+
+    <p id="draftStatus"></p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+                
+                </div>
+</div>
+
+                <!-- LIVE INVITATION PREVIEW -->
+                <div class="invitation-preview-container">
+
+                    <h3>Live Preview</h3>
+
+                    <div
+                        class="invitation-card"
+                        id="invitationCard"
+                    >
+<!-- PAGE 1: WEDDING DETAILS -->
+<div class="invitation-page active" id="detailsPage">
+    
+
+
+
+<h1 id="previewInvitationTitle">You're Invited!</h1>
+
+<p id="previewInvitationMessage">
+    Together with our families, we joyfully invite you to celebrate our wedding.
+</p>
+
+
+                        <!-- COUPLE PHOTO PREVIEW -->
+                        <img
+                            id="previewPhoto"
+                            class="couple-photo"
+                            src=""
+                            alt="Couple wedding photo"
+                            style="display: none;"
+                        >
+
+
+                        <!-- COUPLE NAMES -->
+                        <h1 id="previewNames">
+                            Alex & Maria
+                        </h1>
+
+
+                        <!-- INVITATION MESSAGE -->
+                        <p id="previewMessage">
+                            Join us as we celebrate our special day.
+                        </p>
+
+
+                        <!-- Date  -->
+                        
+                        <h3 id="previewDate">
+                            December 12, 2027
+                        </h3>
+
+
+                        <!-- TIME -->
+                        <p id="previewTime">
+                            3:00 PM
+                        </p>
+
+
+                        <!-- VENUE -->
+                        <p id="previewVenue">
+                            Our Wedding Venue
+                        </p>
+                    </div>
+<!-- PAGE 2: OUR LOVE STORY -->
+
+<div class="invitation-page" id="storyPage">
+
+    <div class="invitation-section" id="storySection">
+
+<div class="story-heading">
+
+    <p class="story-eyebrow">OUR JOURNEY TOGETHER</p>
+
+    <h2>OUR STORY IN<br>PICTURES</h2>
+
+    <p class="story-subtitle">
+        A glimpse into our journey of love, joy, and forever.
+    </p>
+
+    <div class="story-divider">
+        <span>—</span>
+        <span>♡</span>
+        <span>—</span>
+    </div>
+
+</div>
+
+<div class="story-photo-layout">
+
+    <!-- FEATURED SMALL PHOTO 1 -->
+    <div class="story-photo-card">
+        <img
+            id="previewStoryPhoto1"
+            alt="Cherished Moments"
+            style="display: none;"
+        >
+
+<div class="story-photo-caption">
+    <h3 id="previewStoryCaption1">Cherished Moments</h3>
+    <p id="previewStoryChapter1">CHAPTER I</p>
+</div>
+    </div>
+
+    <!-- FEATURED SMALL PHOTO 2 -->
+    <div class="story-photo-card">
+        <img
+            id="previewStoryPhoto2"
+            alt="Timeless Love"
+            style="display: none;"
+        >
+
+<div class="story-photo-caption">
+    <h3 id="previewStoryCaption2">Timeless Love</h3>
+    <p id="previewStoryChapter2">CHAPTER II</p>
+</div>
+    </div>
+
+    <!-- LARGE FEATURED PHOTO -->
+    <div class="story-photo-card story-featured-card">
+        <img
+            id="previewStoryPhoto3"
+            alt="Forever and Always"
+            style="display: none;"
+        >
+
+<div class="story-photo-caption">
+    <h3 id="previewStoryCaption3">Forever & Always</h3>
+    <p id="previewStoryChapter3">CHAPTER III · ETERNAL BOND</p>
+</div>
+    </div>
+
+</div>
+
+        <p id="previewStory">
+            Every love story is beautiful, but ours is our favorite.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- PAGE 3: WEDDING ENTOURAGE -->
+<div class="invitation-page" id="entouragePage">
+<!-- ENTOURAGE -->
+<!-- WEDDING ENTOURAGE -->
+<div class="invitation-section" id="entourageSection">
+    <h2>Wedding Entourage</h2>
+    <div id="previewEntourage">
+        <h3>Parents of the Bride</h3>
+        <p>Parent names</p>
+        
+        <h3>Parents of the Groom</h3>
+        <p>Parent names</p>
+        
+        <h3>Principal Sponsors</h3>
+        <p>Our beloved sponsors</p>
+        
+        <h3>Bridesmaids and Groomsmen</h3>
+        <p>Our special friends</p>
+    </div>
+</div>
+</div>
+
+<!-- PAGE 4: DRESS CODE -->
+<div class="invitation-page" id="dressCodePage">
+    
+    <!-- DRESS CODE -->
+    <div class="invitation-section" id="dressCodeSection">
+        
+        <p class="dress-code-eyebrow">
+            THE WEDDING ATTIRE
+        </p>
+        
+        <h2>Dress Code</h2>
+        
+        <p class="dress-code-subtitle">
+            A little guide to help you dress for our special day.
+        </p>
+        
+        <div class="dress-code-feature">
+            
+            <span class="dress-code-decoration">✧</span>
+            
+            <p id="previewDressCode">
+                Formal Attire
+            </p>
+            
+            <span class="dress-code-decoration">✧</span>
+            
+        </div>
+        
+        <div class="dress-code-palette">
+            <h3>Our Color Palette</h3>
+            
+            <div class="dress-code-colors">
+                <span class="dress-color color-one"></span>
+                <span class="dress-color color-two"></span>
+                <span class="dress-color color-three"></span>
+                <span class="dress-color color-four"></span>
+                <span class="dress-color color-five"></span>
+            </div>
+        </div>
+        
+        <p id="previewDressCodeNote">
+            We kindly invite our guests to follow our wedding theme.
+        </p>
+        
+        <p class="dress-code-footer">
+            Thank you for celebrating with us!
+        </p>
+        
+    </div>
+    
+</div>
+
+<!-- PAGE 5: PHOTO GALLERY -->
+
+<div class="invitation-page" id="galleryPage">
+
+    <!-- PHOTO GALLERY -->
+    <div class="invitation-section" id="gallerySection">
+
+        <p class="gallery-eyebrow">
+            OUR JOURNEY TOGETHER
+        </p>
+
+        <h2>A Collection of Our Moments</h2>
+
+        <p class="gallery-subtitle">
+            Little moments, beautiful memories, and everything in between.
+        </p>
+
+        <div class="gallery-journal" id="previewGallery">
+            <!-- Uploaded memory photos will appear here -->
+        </div>
+
+        <p class="gallery-footer">
+            And this is only the beginning...
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- PAGE 6: GIFT INFORMATION -->
+
+<div class="invitation-page" id="giftPage">
+
+    <!-- GIFT INFORMATION -->
+    <div class="invitation-section" id="giftSection">
+
+        <p class="gift-eyebrow">A LITTLE NOTE FROM OUR HEARTS</p>
+
+        <h2>Gifts & Blessings</h2>
+
+        <div class="gift-decoration">♡</div>
+
+        <p id="previewGiftMessage" class="gift-message">
+            Your presence is the greatest gift.
+            Thank you for celebrating with us!
+        </p>
+
+        <div class="gift-divider">
+            <span>✧</span>
+        </div>
+
+        <div class="gift-preference-card">
+
+            <p class="gift-card-label">GIFT PREFERENCE</p>
+
+            <h3 id="previewGiftPreference">
+                No preference
+            </h3>
+
+            <div id="previewGiftDetails" class="gift-details"></div>
+
+        </div>
+
+        <p class="gift-footer">
+            Your love and generosity mean so much to us.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- PAGE 7: RSVP -->
+
+<div class="invitation-page" id="rsvpPage">
+
+    <!-- RSVP -->
+    <div class="invitation-section" id="rsvpSection">
+
+        <p class="rsvp-eyebrow">KINDLY REPLY</p>
+
+        <h2>We Hope You Can Join Us</h2>
+
+        <div class="rsvp-decoration">♡</div>
+
+        <p id="previewRsvpMessage" class="rsvp-message">
+            We hope you can celebrate with us!
+        </p>
+
+        <div class="rsvp-deadline-card">
+            <span>PLEASE RESPOND ON OR BEFORE</span>
+            <strong id="previewRsvpDeadline">
+                Please set RSVP deadline
+            </strong>
+        </div>
+
+        <div class="rsvp-form-card">
+
+            <p class="rsvp-form-heading">Kindly Confirm Your Attendance</p>
+
+            <form id="guestRsvpForm">
+
+                <label for="guestName">Your Name</label>
+                <input type="text" id="guestName" required
+                    placeholder="Enter your full name">
+
+                <label for="guestAttendance">Will you attend?</label>
+                <select id="guestAttendance" required>
+                    <option value="">Please select</option>
+                    <option value="Joyfully accepts">Joyfully accepts</option>
+                    <option value="Regretfully declines">Regretfully declines</option>
+                </select>
+
+                <label for="guestCount">Number of Guests</label>
+                <input type="number" id="guestCount" min="1" max="10"
+                    value="1" required>
+
+                <button type="submit">Send My Response ♡</button>
+
+                <p id="rsvpConfirmation" style="display:none;">
+                    Thank you! Your response has been received. ♡
+                </p>
+
+            </form>
+
+        </div>
+
+        <p class="rsvp-footer">
+            With love, we look forward to celebrating with you.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- PAGE 8: WEDDING LOCATIONS -->
+<div class="invitation-page" id="locationsPage">
+    <div class="invitation-section" id="mapSection">
+
+        <p class="locations-eyebrow">JOIN US ON OUR SPECIAL DAY</p>
+
+        <h2>Where to Celebrate With Us</h2>
+
+        <p class="locations-subtitle">
+            We can't wait to celebrate these beautiful moments with you.
+        </p>
+
+        <div class="venue-details ceremony-venue">
+            <span class="venue-icon">✧</span>
+            <p class="venue-label">THE CEREMONY</p>
+            <h3 id="previewCeremonyVenue">Ceremony venue</h3>
+            <p id="previewCeremonyAddress">Ceremony address</p>
+            <a id="previewCeremonyMap" href="#"
+                target="_blank" rel="noopener noreferrer"
+                style="display:none;">
+                View Map &amp; Directions →
+            </a>
+        </div>
+
+        <div class="locations-divider">
+            <span>♡</span>
+        </div>
+
+        <div class="venue-details reception-venue">
+            <span class="venue-icon">✧</span>
+            <p class="venue-label">THE RECEPTION</p>
+            <h3 id="previewReceptionVenue">Reception venue</h3>
+            <p id="previewReceptionAddress">Reception address</p>
+            <a id="previewReceptionMap" href="#"
+                target="_blank" rel="noopener noreferrer"
+                style="display:none;">
+                View Map &amp; Directions →
+            </a>
+        </div>
+
+        <p class="locations-footer">
+            We look forward to celebrating with you!
+        </p>
+
+    </div>
+</div>
+
+<!-- INVITATION PAGE NAVIGATION -->
+<div class="invitation-navigation" id="invitationNavigation">
+
+    <button type="button" id="prevPageBtn" disabled>
+        ← Previous
+    </button>
+
+    <span id="pageIndicator">Page 1 of 8</span>
+
+    <button type="button" id="nextPageBtn">
+        Next →
+    </button>
+
+</div>
+
+</div>
+                 </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
+
+            <p class="eyebrow">
+                ABOUT EVER AFTER
+            </p>
+
+            <h2>
+                Your Special Day Deserves a Special Invitation
+            </h2>
+
+            <p>
+                Ever After helps couples create beautiful,
+                personalized wedding invitations that they
+                can easily share with family and friends.
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        Made with love ♡ | Ever After
+    </p>
+
+<button
+    type="button"
+    id="platformAccessBtn"
+    onclick="document.getElementById('ownerLogin').style.display='block'; document.getElementById('ownerLogin').scrollIntoView({behavior:'smooth'});"
+>
+    Platform Access
+</button>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
